@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-image:url(bg1.jpg);
+    background-size:100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    
+}
+h1{
+    padding-bottom: 2rem;
+    text-shadow: 4px 2px 4px #0f0f0f;
+    color:rgb(195, 81, 218)
+}
+#container{
+    padding-top:2rem;
+    padding-bottom:2rem;
+    color:rgb(20, 20, 20);
+    font-size: 1.8rem;
+    font-weight:bold;
+    width: 100%;
+    border-radius:2rem;
+    display: inherit;
+    background:rgba(0,0,0,0.2);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;   
+}
+
+input[type="text"]{
+    margin-bottom:4rem;
+    width:30%;
+    height:55px;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: bold;
+    outline: 0;
+    border: 2px solid rgb(236, 142, 255);
+    color: black;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+input[type="text"]::placeholder {
+    color:black;
+    font-weight: bold;
+}
+input[type="text"]:hover{
+    background-color:silver;
+}
+input[type="button"]{
+    width:15%;
+    height:55px;
+    cursor: pointer;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 2px solid rgb(236, 142, 255);
+    color: black;
+    font-weight: bold;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+input[type="button"]:hover{
+        background: rgb(236, 142, 255);
+        color:white;
+}
+p{
+    font-weight:bold;
+    font-size:2rem;
+}
+p:hover{
+    color:red;
+    cursor: pointer;
+}
+@media screen and (max-width: 610px){
+    INPUT[type="text"]{
+        width:46%;
+    }
+    INPUT[type="button"]{
+        width:22%;
+    }
+    
+}
+@media screen and (max-width: 610px){
+    body{
+        background:rgba(167, 238, 238, 0.623);
+
+    }
+    #container{
+        border:none;
+        width:420px;
+        font-size: 20px;
+
+    }  
+}
